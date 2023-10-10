@@ -1,0 +1,5 @@
+{
+  "imports": {
+    "@sspa/mifeA": "http://localhost:9010/spa.js"
+  }
+}
