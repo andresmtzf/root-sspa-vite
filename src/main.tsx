@@ -4,14 +4,14 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import { registerApplication, start } from 'single-spa'
 import App from './App'
-import './index.css'
+import './assets/custom.scss'
 
-const mifeAModule = '@sspa/mifeA'
+const contactosModule = '@sspa-vite/contactos'
 
 registerApplication({
-  name: 'mifeA',
-  app: () => import(/* @vite-ignore */ mifeAModule),
-  activeWhen: '/mifea',
+  name: 'contactos',
+  app: () => import(/* @vite-ignore */ contactosModule),
+  activeWhen: '/contactos',
 })
 start()
 

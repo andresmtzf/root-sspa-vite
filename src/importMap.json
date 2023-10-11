@@ -1,5 +1,5 @@
 {
   "imports": {
-    "@sspa/mifeA": "http://localhost:9010/spa.js"
+    "@sspa-vite/contactos": "http://localhost:9010/spa.js"
   }
 }
