@@ -3,3 +3,9 @@ $fa-font-path: '../../node_modules/ui-react-components-ui/dist/assets/fontawesom
 
 @import '../../node_modules/ui-react-components-ui/dist/assets/styles.scss';
 @import './layout';
+@import '../../node_modules/swiper/swiper.scss';
+@import '../../node_modules/swiper/modules/pagination.scss';
+@import '../../node_modules/swiper/modules/navigation.scss';
+@import './contactos';
+@import './scroll-custom';
+@import './filtros';

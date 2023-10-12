@@ -1,0 +1,56 @@
+.ctos-card-border {
+  border: 1px solid #ebedf3 !important;
+}
+
+.switch-color-bg:checked {
+  background-color: #00c1d4 !important;
+  border: 1px solid #00c1d4 !important;
+}
+
+.ctos-ver-mas,
+.ctos-ver-menos:hover {
+  color: $ui-slate !important;
+}
+
+.ctos-card-consolidado {
+  .span-consolidado {
+    font-size: 1.75rem !important;
+  }
+}
+
+.ctos-card-consolidado:hover {
+  font-size: 1.25rem;
+  border: 1px $ui-slate solid !important;
+  .span-consolidado {
+    font-size: 1.75rem !important;
+  }
+}
+.ctos-card-consolidado-seleccionado {
+  font-size: 1.25rem !important;
+  border: 2px $ui-slate solid !important;
+  .p-consolidado {
+    font-weight: bolder;
+  }
+  .span-consolidado {
+    font-size: 1.75rem !important;
+  }
+}
+
+.ctos-tag-card-contactos {
+  width: 100%;
+  overflow-x: scroll;
+  white-space: nowrap;
+  padding-bottom: 10px;
+}
+
+.ctos-badge-card-contactos {
+  border: 5px solid white;
+  width: 1.5rem !important;
+  height: 1.5rem !important;
+}
+
+.ctos-card-disabled {
+  pointer-events: none;
+  opacity: 30%;
+  background: rgba(255, 255, 255, 0.601);
+}

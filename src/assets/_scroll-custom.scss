@@ -1,0 +1,26 @@
+.ctos-scroll::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+.ctos-scroll::-webkit-scrollbar:horizontal {
+  height: 6px;
+}
+
+.ctos-scroll::-webkit-scrollbar:hover {
+  height: 8px;
+  cursor: pointer;
+}
+.ctos-scroll::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid white;
+  background-color: rgb(174, 174, 174);
+}
+.ctos-scroll::-webkit-scrollbar-thumb:hover {
+  border-radius: 8px;
+  border: 2px solid white;
+  background-color: rgb(174, 174, 174);
+}
+.ctos-scroll::-webkit-scrollbar-track {
+  border-radius: 8px;
+  border: 4px solid white;
+}

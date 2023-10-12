@@ -1,0 +1,93 @@
+.filters-applied {
+  overflow-x: auto;
+  scrollbar-color: red #f0f0f0;
+  scrollbar-width: thin;
+
+  -webkit-overflow-scrolling: touch;
+
+  &::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(233, 233, 233, 0.055);
+    background-color: #f0f0f0;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar {
+    height: 6px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    // background-color: #4771c0;
+    background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(0.62, #d6e1ee),
+      color-stop(0.86, #d6e1ee)
+    );
+  }
+}
+
+.bagde-icon {
+  fill: #c3c5c7;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  &:hover {
+    fill: #e77e7e;
+  }
+}
+
+.filters {
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+  overflow-y: auto;
+  width: 430px;
+  background-color: white;
+  height: 100%;
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+
+  right: 0;
+  translate: 100% 0;
+  transition: 0.3s;
+  &.open {
+    translate: 0;
+    box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+  }
+
+  .filter-container {
+    flex-direction: column;
+    justify-content: start;
+    padding: 0 1.3rem;
+    margin-top: 0;
+    button {
+      justify-content: center;
+    }
+  }
+}
+
+.overlay {
+  width: 100%;
+  background: rgba(27, 32, 44, 0.5);
+  backdrop-filter: blur(6px);
+  height: 100%;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+
+  &.open {
+    visibility: visible;
+    opacity: 1;
+  }
+}
